@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{%load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'hms/index/style.css'%}">
+<script type="text/javascript" src="{% static 'hms/jquery.js' %}"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="box">
+    <p class="nav"><h4>CENTRALIZED MEDICAL SERVICES</h4>
+    <a href="{% url 'index' %}">Home</a> //
+    <a href="{% url 'search' %}">Search</a> //
+    <a href="{% url 'reviews' %}">Reviews</a> //
+    <a href="#">Contact us</a> //
+  </p>
+    {% for h in htodisp%}
+ <pre><span class=>Location:{{h.hlocation}}
+</span><br>Name: {{h.hname}}<br><br>Rating:{{h.points}}
+
+<!-- span class="ig">if __name__ == "__main__":
+    app.run()</span -->
+  </pre>
+    {%endfor%}
+</div>
+</body>
+</html>

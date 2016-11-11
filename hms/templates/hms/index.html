@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{%load static %}
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>WELCOME| MEDICAL SERVICES</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="{% static 'hms/index/style.css'%}">
+<script type="text/javascript" src="{% static 'hms/jquery.js' %}"></script>
+
+  <style type="text/css">
+    h1 { margin: 0 0 30px 0; background: url("{%static 'hms/logo.jpg' %}") no-repeat left; height: 165px; }
+    h1 span, p.tagline { display: none; }
+  </style>
+
+
+</head><body><div class="box">
+
+
+    <p class="nav"><h4>CENTRALIZED MEDICAL SERVICES</h4>
+    <a href="{% url 'index' %} ">Home</a> //
+    <a href="{% url 'search' %}">Search</a> //
+    <a href="{% url 'reviews' %}">Reviews</a> //
+    <a href="#">Contact us</a>
+    </p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <h1><img src="{% static 'hms/logo.jpg' %}" style="width:810px;height:500px;" align="right" ></h1>
+
+
+
+  <!--pre>
+    <span class=>from flask import Flask
+app = Flask(__name__)</span>
+
+@app.route("/")
+def hello():
+    return "Hello World!"
+
+<span class="ig">if __name__ == "__main__":
+    app.run()</span>
+  </pre >
+
+  <p class="footer">
+    © Copyright 2010 - 2016 by <a href="http://lucumr.pocoo.org/">Armin Ronacher</a>
+</p--></div></body></html>
